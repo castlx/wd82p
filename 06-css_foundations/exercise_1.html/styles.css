@@ -1,0 +1,16 @@
+header {
+  background-color: #ff0000;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Prima Serif";
+  text-align: center;
+}
+
+/* I wasn't able to do this through Inline CSS so I just made it through External CSS */
+button {
+  font-family: Droid Sans;
+  border-color: #e3e3e3;
+  background-color: #ffa500;
+}
