@@ -38,3 +38,7 @@ div {
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+.return-link {
+  background-color: #fff;
+}
