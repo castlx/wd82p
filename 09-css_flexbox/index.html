@@ -10,7 +10,29 @@
     <header class="menu-container">
       <nav class="menu">
         <ul class="menu-items">
-          <li class="date">Aug 8, 2023</li>
+          <li id="currentDate" class="date"></li>
+          <script>
+            // Function to update the date
+            function updateDate() {
+              var currentDate = new Date();
+              var options = {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              };
+              var formattedDate = currentDate.toLocaleDateString(
+                "en-US",
+                options
+              );
+
+              // Update the text content of the element with the current date
+              document.getElementById("currentDate").textContent =
+                "" + formattedDate;
+            }
+
+            // Call the function to initially set the date
+            updateDate();
+          </script>
           <li class="links">
             <a class="signup" href="#">Sign up</a>
             <a class="login" href="#">Login</a>
@@ -46,5 +68,7 @@
       <div class="footer-item footer-two"></div>
       <div class="footer-item footer-three"></div>
     </footer>
+
+    <p class="return-link"><a href="../index.html">Return to Exercises</a></p>
   </body>
 </html>
