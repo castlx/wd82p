@@ -22,24 +22,38 @@ body {
   background-color: #d6e9fe;
 }
 
+.absolute {
+  position: relative;
+}
+
 .item img {
   display: block;
 }
 
 .item-relative {
   position: relative;
-  top: 1em;
-  bottom: 1em;
+  top: 30px;
+  left: 30px;
 }
 
 .item-absolute {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 10px;
+  left: 10px;
 }
 
 .item-fixed {
   position: fixed;
   bottom: 1em;
   right: 1em;
+}
+
+.exercise-link {
+  text-align: center;
+}
+
+.example-link {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
 }

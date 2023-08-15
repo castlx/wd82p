@@ -19,11 +19,13 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  color: aqua;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   width: 100%;
   padding: 50px;
@@ -33,4 +35,44 @@ a:hover {
 .menu {
   display: flex;
   list-style-type: none;
+  gap: 1.5em;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.features-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #b2d6ff;
+  border-radius: 5px;
+  padding-top: 60px;
+  list-style-type: none;
+
+  position: absolute;
+  top: -25px;
+  left: -20px;
+
+  z-index: 1;
+}
+
+.dropdown:hover .features-menu {
+  display: flex;
+  cursor: pointer;
+}
+
+.features-menu li {
+  list-style-type: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px 40px 10px 20px;
+}
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.features {
+  position: relative;
+  z-index: 2;
 }
