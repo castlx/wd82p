@@ -25,6 +25,26 @@ body {
   font-weight: bold;
 }
 
+.anchor-link-one:link,
+.anchor-link-one:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.anchor-link-one:hover {
+  color: magenta;
+}
+
+.anchor-link-two:link,
+.anchor-link-two:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.anchor-link-two:hover {
+  color: magenta;
+}
+
 .menu-items {
   color: #e0e0e0;
   list-style-type: none;
