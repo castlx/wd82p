@@ -7,21 +7,8 @@
 .page {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Harman Retro Inline";
-  font-size: 55px;
-  color: #413b33;
-}
-
-.page-link {
-  font-size: 18px;
   text-align: center;
-}
-
-.page-link:hover,
-.page-link:visited,
-.page-link:link {
-  text-decoration: none;
-  color: #413b33;
+  font-size: 18px;
 }
 
 .section {
@@ -31,6 +18,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page-link {
+  color: black;
+  font-family: "Harman Retro Inline";
+  display: inline;
+  z-index: 6;
+}
+
+.page-link:visited,
+.page-link:link {
+  text-decoration: none;
+  color: #5e59da;
+}
+
+.page-link:hover {
+  color: #59d5da;
 }
 
 .menu {

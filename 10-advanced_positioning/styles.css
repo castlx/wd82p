@@ -57,3 +57,7 @@ body {
   bottom: 1em;
   left: 1em;
 }
+
+.return-link {
+  display: flex;
+}
